@@ -15,7 +15,6 @@ private
 
   def make_marriage_reciprocal
     if spouse_id_changed?
-      spouse = Person.find(spouse_id)
       spouse.update(:spouse_id => id)
     end
   end
